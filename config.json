@@ -1,0 +1,48 @@
+{
+  "monitores": [
+    {
+      "nombre": "Relojes Casio (tienda oficial)",
+      "tienda": "casio",
+      "activo": true,
+      "incluir": ["reloj"],
+      "excluir": [],
+      "descuento_min": 20,
+      "precio_max": null
+    },
+    {
+      "nombre": "Búsqueda: reloj casio (requiere sesión)",
+      "busqueda": "reloj casio",
+      "activo": false,
+      "excluir": ["correa", "extensible", "pila"],
+      "descuento_min": 25,
+      "precio_max": 1500,
+      "max_paginas": 2
+    }
+  ],
+  "reglas": {
+    "descuento_min": 20,
+    "bajada_min_pct": 5,
+    "resumen_al_iniciar": true,
+    "max_avisos_por_corrida": 15
+  },
+  "cupones": [
+    {
+      "nombre": "Ejemplo: 10% en relojes (desactivado)",
+      "porcentaje": 10,
+      "tope": 300,
+      "compra_minima": 500,
+      "palabras": ["reloj"],
+      "vence": "2026-12-31",
+      "activo": false
+    }
+  ],
+  "cupones_acumulables": false,
+  "navegador": {
+    "canal": "auto",
+    "max_paginas": 3,
+    "pausa_seg": [3, 7]
+  },
+  "continuo": {
+    "intervalo_minutos": 120
+  }
+}
